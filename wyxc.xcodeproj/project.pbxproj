@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD110FC71CBF3F3C00FCA6DC /* Model.xcdatamodeld */; };
+		CD110FCD1CBF441300FCA6DC /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FCC1CBF441300FCA6DC /* LoginController.m */; };
+		CD110FD11CBF447300FCA6DC /* TestCoredataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD01CBF447300FCA6DC /* TestCoredataController.m */; };
+		CD110FD61CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD31CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m */; };
+		CD110FD71CBF495F00FCA6DC /* RegisterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD51CBF495F00FCA6DC /* RegisterEntity.m */; };
+		CD125C2F1CAF4F7D00388AE8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD125C2E1CAF4F7D00388AE8 /* Home.storyboard */; };
+		CD125C311CAF4F9100388AE8 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD125C301CAF4F9100388AE8 /* Contacts.storyboard */; };
+		CD125C331CAF4FBA00388AE8 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD125C321CAF4FBA00388AE8 /* Discovery.storyboard */; };
+		CD125C351CAF4FCC00388AE8 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD125C341CAF4FCC00388AE8 /* Me.storyboard */; };
+		CD125C3A1CAF508800388AE8 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C391CAF508800388AE8 /* MainController.m */; };
+		CD125C3C1CAF575100388AE8 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD125C3B1CAF575100388AE8 /* Calendar.storyboard */; };
+		CD125C521CAF5A7A00388AE8 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C511CAF5A7A00388AE8 /* HomeController.m */; };
+		CD125C551CAF5A9600388AE8 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C541CAF5A9600388AE8 /* ContactsController.m */; };
+		CD125C581CAF5AB000388AE8 /* CalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C571CAF5AB000388AE8 /* CalendarController.m */; };
+		CD125C5B1CAF5ACC00388AE8 /* DiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C5A1CAF5ACC00388AE8 /* DiscoveryController.m */; };
+		CD125C5E1CAF5ADE00388AE8 /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD125C5D1CAF5ADE00388AE8 /* MeController.m */; };
+		CD5427931CAC0324003543AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5427921CAC0324003543AE /* main.m */; };
+		CD5427961CAC0324003543AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5427951CAC0324003543AE /* AppDelegate.m */; };
+		CD54279C1CAC0324003543AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54279A1CAC0324003543AE /* Main.storyboard */; };
+		CD54279E1CAC0324003543AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54279D1CAC0324003543AE /* Assets.xcassets */; };
+		CD5427A11CAC0324003543AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54279F1CAC0324003543AE /* LaunchScreen.storyboard */; };
+		CDF95AFD1CC4E3A900E6416B /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF95AFC1CC4E3A900E6416B /* RegisterController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD110FC81CBF3F3C00FCA6DC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CD110FCB1CBF441300FCA6DC /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		CD110FCC1CBF441300FCA6DC /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		CD110FCF1CBF447300FCA6DC /* TestCoredataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoredataController.h; sourceTree = "<group>"; };
+		CD110FD01CBF447300FCA6DC /* TestCoredataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoredataController.m; sourceTree = "<group>"; };
+		CD110FD21CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CD110FD31CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CD110FD41CBF495F00FCA6DC /* RegisterEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterEntity.h; sourceTree = "<group>"; };
+		CD110FD51CBF495F00FCA6DC /* RegisterEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterEntity.m; sourceTree = "<group>"; };
+		CD125C2E1CAF4F7D00388AE8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CD125C301CAF4F9100388AE8 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		CD125C321CAF4FBA00388AE8 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		CD125C341CAF4FCC00388AE8 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		CD125C381CAF508800388AE8 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		CD125C391CAF508800388AE8 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		CD125C3B1CAF575100388AE8 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		CD125C501CAF5A7A00388AE8 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		CD125C511CAF5A7A00388AE8 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		CD125C531CAF5A9600388AE8 /* ContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsController.h; sourceTree = "<group>"; };
+		CD125C541CAF5A9600388AE8 /* ContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsController.m; sourceTree = "<group>"; };
+		CD125C561CAF5AB000388AE8 /* CalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarController.h; sourceTree = "<group>"; };
+		CD125C571CAF5AB000388AE8 /* CalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarController.m; sourceTree = "<group>"; };
+		CD125C591CAF5ACC00388AE8 /* DiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryController.h; sourceTree = "<group>"; };
+		CD125C5A1CAF5ACC00388AE8 /* DiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryController.m; sourceTree = "<group>"; };
+		CD125C5C1CAF5ADE00388AE8 /* MeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeController.h; sourceTree = "<group>"; };
+		CD125C5D1CAF5ADE00388AE8 /* MeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeController.m; sourceTree = "<group>"; };
+		CD54278E1CAC0324003543AE /* wyxc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wyxc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5427921CAC0324003543AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD5427941CAC0324003543AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD5427951CAC0324003543AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD54279B1CAC0324003543AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD54279D1CAC0324003543AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5427A01CAC0324003543AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5427A21CAC0324003543AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE3947A1CC09D610079FB2E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CDF95AFB1CC4E3A900E6416B /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		CDF95AFC1CC4E3A900E6416B /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD54278B1CAC0324003543AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD110FCE1CBF444A00FCA6DC /* TestCoredata */ = {
+			isa = PBXGroup;
+			children = (
+				CD110FCF1CBF447300FCA6DC /* TestCoredataController.h */,
+				CD110FD01CBF447300FCA6DC /* TestCoredataController.m */,
+			);
+			name = TestCoredata;
+			sourceTree = "<group>";
+		};
+		CD125C2C1CAF4E8400388AE8 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C491CAF58AC00388AE8 /* Modal */,
+				CD125C481CAF58A600388AE8 /* View */,
+				CD125C421CAF584B00388AE8 /* Controller */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+		CD125C2D1CAF4F3400388AE8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C2E1CAF4F7D00388AE8 /* Home.storyboard */,
+				CD125C301CAF4F9100388AE8 /* Contacts.storyboard */,
+				CD125C321CAF4FBA00388AE8 /* Discovery.storyboard */,
+				CD125C341CAF4FCC00388AE8 /* Me.storyboard */,
+				CD125C3B1CAF575100388AE8 /* Calendar.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CD125C361CAF501500388AE8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C371CAF505200388AE8 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CD125C371CAF505200388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C381CAF508800388AE8 /* MainController.h */,
+				CD125C391CAF508800388AE8 /* MainController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C3D1CAF57B400388AE8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C4B1CAF58BC00388AE8 /* Modal */,
+				CD125C4A1CAF58B400388AE8 /* View */,
+				CD125C431CAF585A00388AE8 /* Controller */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		CD125C411CAF583300388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C501CAF5A7A00388AE8 /* HomeController.h */,
+				CD125C511CAF5A7A00388AE8 /* HomeController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C421CAF584B00388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C531CAF5A9600388AE8 /* ContactsController.h */,
+				CD125C541CAF5A9600388AE8 /* ContactsController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C431CAF585A00388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C561CAF5AB000388AE8 /* CalendarController.h */,
+				CD125C571CAF5AB000388AE8 /* CalendarController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C441CAF586300388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C591CAF5ACC00388AE8 /* DiscoveryController.h */,
+				CD125C5A1CAF5ACC00388AE8 /* DiscoveryController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C451CAF586D00388AE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C5C1CAF5ADE00388AE8 /* MeController.h */,
+				CD125C5D1CAF5ADE00388AE8 /* MeController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD125C461CAF588E00388AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD125C471CAF589B00388AE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		CD125C481CAF58A600388AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD125C491CAF58AC00388AE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		CD125C4A1CAF58B400388AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD125C4B1CAF58BC00388AE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		CD125C4C1CAF58C500388AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD125C4D1CAF58CB00388AE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		CD125C4E1CAF58D200388AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD125C4F1CAF58D700388AE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		CD5427851CAC0324003543AE = {
+			isa = PBXGroup;
+			children = (
+				CD110FD21CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.h */,
+				CD110FD31CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m */,
+				CD110FD41CBF495F00FCA6DC /* RegisterEntity.h */,
+				CD110FD51CBF495F00FCA6DC /* RegisterEntity.m */,
+				CD5427901CAC0324003543AE /* wyxc */,
+				CD54278F1CAC0324003543AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD54278F1CAC0324003543AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD54278E1CAC0324003543AE /* wyxc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5427901CAC0324003543AE /* wyxc */ = {
+			isa = PBXGroup;
+			children = (
+				CD110FCE1CBF444A00FCA6DC /* TestCoredata */,
+				CD125C2D1CAF4F3400388AE8 /* Storyboards */,
+				CD125C361CAF501500388AE8 /* Main */,
+				CD5427AB1CAC0C8B003543AE /* Home */,
+				CD125C2C1CAF4E8400388AE8 /* Contacts */,
+				CD125C3D1CAF57B400388AE8 /* Calendar */,
+				CD5427AA1CAC0C6C003543AE /* Discovery */,
+				CD5427A91CAC0C5D003543AE /* Me */,
+				CDF95AFA1CC4E34000E6416B /* Register */,
+				CD5427A81CAC0C20003543AE /* Login */,
+				CD5427941CAC0324003543AE /* AppDelegate.h */,
+				CD5427951CAC0324003543AE /* AppDelegate.m */,
+				CD54279A1CAC0324003543AE /* Main.storyboard */,
+				CD54279D1CAC0324003543AE /* Assets.xcassets */,
+				CD54279F1CAC0324003543AE /* LaunchScreen.storyboard */,
+				CD5427A21CAC0324003543AE /* Info.plist */,
+				CD5427911CAC0324003543AE /* Supporting Files */,
+				CD110FC71CBF3F3C00FCA6DC /* Model.xcdatamodeld */,
+				CDE3947A1CC09D610079FB2E /* PrefixHeader.pch */,
+			);
+			path = wyxc;
+			sourceTree = "<group>";
+		};
+		CD5427911CAC0324003543AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5427921CAC0324003543AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5427A81CAC0C20003543AE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CD110FCB1CBF441300FCA6DC /* LoginController.h */,
+				CD110FCC1CBF441300FCA6DC /* LoginController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CD5427A91CAC0C5D003543AE /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C4F1CAF58D700388AE8 /* Modal */,
+				CD125C4E1CAF58D200388AE8 /* View */,
+				CD125C451CAF586D00388AE8 /* Controller */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		CD5427AA1CAC0C6C003543AE /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C4D1CAF58CB00388AE8 /* Modal */,
+				CD125C4C1CAF58C500388AE8 /* View */,
+				CD125C441CAF586300388AE8 /* Controller */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		CD5427AB1CAC0C8B003543AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD125C471CAF589B00388AE8 /* Modal */,
+				CD125C461CAF588E00388AE8 /* View */,
+				CD125C411CAF583300388AE8 /* Controller */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		CDF95AFA1CC4E34000E6416B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CDF95AFB1CC4E3A900E6416B /* RegisterController.h */,
+				CDF95AFC1CC4E3A900E6416B /* RegisterController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD54278D1CAC0324003543AE /* wyxc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5427A51CAC0324003543AE /* Build configuration list for PBXNativeTarget "wyxc" */;
+			buildPhases = (
+				CD54278A1CAC0324003543AE /* Sources */,
+				CD54278B1CAC0324003543AE /* Frameworks */,
+				CD54278C1CAC0324003543AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wyxc;
+			productName = wyxc;
+			productReference = CD54278E1CAC0324003543AE /* wyxc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5427861CAC0324003543AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fighting;
+				TargetAttributes = {
+					CD54278D1CAC0324003543AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L5AJSX72A9;
+					};
+				};
+			};
+			buildConfigurationList = CD5427891CAC0324003543AE /* Build configuration list for PBXProject "wyxc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD5427851CAC0324003543AE;
+			productRefGroup = CD54278F1CAC0324003543AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD54278D1CAC0324003543AE /* wyxc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD54278C1CAC0324003543AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5427A11CAC0324003543AE /* LaunchScreen.storyboard in Resources */,
+				CD54279E1CAC0324003543AE /* Assets.xcassets in Resources */,
+				CD125C311CAF4F9100388AE8 /* Contacts.storyboard in Resources */,
+				CD54279C1CAC0324003543AE /* Main.storyboard in Resources */,
+				CD125C3C1CAF575100388AE8 /* Calendar.storyboard in Resources */,
+				CD125C2F1CAF4F7D00388AE8 /* Home.storyboard in Resources */,
+				CD125C351CAF4FCC00388AE8 /* Me.storyboard in Resources */,
+				CD125C331CAF4FBA00388AE8 /* Discovery.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD54278A1CAC0324003543AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD125C521CAF5A7A00388AE8 /* HomeController.m in Sources */,
+				CD125C3A1CAF508800388AE8 /* MainController.m in Sources */,
+				CD125C551CAF5A9600388AE8 /* ContactsController.m in Sources */,
+				CD125C581CAF5AB000388AE8 /* CalendarController.m in Sources */,
+				CDF95AFD1CC4E3A900E6416B /* RegisterController.m in Sources */,
+				CD5427961CAC0324003543AE /* AppDelegate.m in Sources */,
+				CD110FCD1CBF441300FCA6DC /* LoginController.m in Sources */,
+				CD110FD11CBF447300FCA6DC /* TestCoredataController.m in Sources */,
+				CD110FD61CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m in Sources */,
+				CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */,
+				CD110FD71CBF495F00FCA6DC /* RegisterEntity.m in Sources */,
+				CD5427931CAC0324003543AE /* main.m in Sources */,
+				CD125C5B1CAF5ACC00388AE8 /* DiscoveryController.m in Sources */,
+				CD125C5E1CAF5ADE00388AE8 /* MeController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD54279A1CAC0324003543AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54279B1CAC0324003543AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD54279F1CAC0324003543AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5427A01CAC0324003543AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5427A31CAC0324003543AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD5427A41CAC0324003543AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD5427A61CAC0324003543AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = wyxc/PrefixHeader.pch;
+				INFOPLIST_FILE = wyxc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzlzinfo.wyxc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD5427A71CAC0324003543AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = wyxc/PrefixHeader.pch;
+				INFOPLIST_FILE = wyxc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzlzinfo.wyxc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5427891CAC0324003543AE /* Build configuration list for PBXProject "wyxc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5427A31CAC0324003543AE /* Debug */,
+				CD5427A41CAC0324003543AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5427A51CAC0324003543AE /* Build configuration list for PBXNativeTarget "wyxc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5427A61CAC0324003543AE /* Debug */,
+				CD5427A71CAC0324003543AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD110FC71CBF3F3C00FCA6DC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD110FC81CBF3F3C00FCA6DC /* Model.xcdatamodel */,
+			);
+			currentVersion = CD110FC81CBF3F3C00FCA6DC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD5427861CAC0324003543AE /* Project object */;
+}

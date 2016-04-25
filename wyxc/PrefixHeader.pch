@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  wyxc
+//
+//  Created by Fighting on 16/4/15.
+//  Copyright © 2016年 Fighting. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+#define RGBA(r, g, b, a)                                                       \
+[UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
+#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+
+#pragma mark - Font Functions
+#define FONT_NAME @"FZLanTingHei-R-GBK"
+#define FONT_NAME_BOLD @"FZLanTingHei-DB-GBK"
+//设置字体
+#define FONT(F) [UIFont fontWithName:FONT_NAME size:F]
+//定义常用字体字号
+#define FONT9 [UIFont fontWithName:FONT_NAME size:9]
+#define FONT10 [UIFont fontWithName:FONT_NAME size:10]
+#define FONT11 [UIFont fontWithName:FONT_NAME size:11]
+#define FONT12 [UIFont fontWithName:FONT_NAME size:12]
+#define FONT13 [UIFont fontWithName:FONT_NAME size:13]
+#define FONT14 [UIFont fontWithName:FONT_NAME size:14]
+#define FONT15 [UIFont fontWithName:FONT_NAME size:15]
+#define FONT155 [UIFont fontWithName:FONT_NAME size:15.5]
+#define FONT16 [UIFont fontWithName:FONT_NAME size:16]
+#define FONT17 [UIFont fontWithName:FONT_NAME size:17]
+#define FONT18 [UIFont fontWithName:FONT_NAME size:18]
+#define FONT19 [UIFont fontWithName:FONT_NAME size:19]
+#define FONT20 [UIFont fontWithName:FONT_NAME size:20]
+#define FONT21 [UIFont fontWithName:FONT_NAME size:21]
+#define FONT40 [UIFont fontWithName:FONT_NAME size:40]
+
+//定义常用颜色
+#define MAIN_TEXT_COLOR RGB(33.0, 33.0, 33.0)
+#define SUMMARY_TEXT_COLOR RGB(153.0, 153.0, 153.0)
+#define TOOLBAR_TEXT_COLOR RGB(102.0, 102.0, 102.0)
+//表单标题常用颜色
+#define FORM_TITLE_COLOR RGB(67, 67, 67)
+//表单字段常用颜色
+#define FORM_FIELD_COLOR RGB(102, 102, 102)
+
+#define NAV_BAR_COLOR RGB(63.0, 175.0, 255.0)
+#define FIELD_PLACEHOLDER_COLOR RGB(204, 204, 204)
+#define BUTTON_BACKGROUND_COLOR RGB(40.0, 170.0, 250.0)
+#define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
