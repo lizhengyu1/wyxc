@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		9CB561E98FFE045A9C1A06F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 050ABDABED4AEBA2295EA98B /* libPods.a */; };
 		CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD110FC71CBF3F3C00FCA6DC /* Model.xcdatamodeld */; };
-=======
-		CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD110FC71CBF3F3C00FCA6DC /* Model.xcdatamodeld */; };
-		CD110FCD1CBF441300FCA6DC /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FCC1CBF441300FCA6DC /* LoginController.m */; };
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 		CD110FD11CBF447300FCA6DC /* TestCoredataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD01CBF447300FCA6DC /* TestCoredataController.m */; };
 		CD110FD61CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD31CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m */; };
 		CD110FD71CBF495F00FCA6DC /* RegisterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD110FD51CBF495F00FCA6DC /* RegisterEntity.m */; };
@@ -34,7 +29,6 @@
 		CD54279E1CAC0324003543AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54279D1CAC0324003543AE /* Assets.xcassets */; };
 		CD5427A11CAC0324003543AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54279F1CAC0324003543AE /* LaunchScreen.storyboard */; };
 		CDF95AFD1CC4E3A900E6416B /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF95AFC1CC4E3A900E6416B /* RegisterController.m */; };
-<<<<<<< HEAD
 		E22FD6481CCE36AE0060480A /* HttpController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FD6471CCE36AE0060480A /* HttpController.m */; };
 		E2FCB4B21CCF7DAB00790B16 /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCB4B11CCF7DAB00790B16 /* HttpService.m */; };
 		E2FCB4B81CCF7EF100790B16 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCB4B71CCF7EF100790B16 /* Common.m */; };
@@ -51,14 +45,6 @@
 		124467268DC3A3F3D667D62E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		96E86BF82D20CD5D4236D26E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CD110FC81CBF3F3C00FCA6DC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-=======
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		CD110FC81CBF3F3C00FCA6DC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		CD110FCB1CBF441300FCA6DC /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		CD110FCC1CBF441300FCA6DC /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 		CD110FCF1CBF447300FCA6DC /* TestCoredataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoredataController.h; sourceTree = "<group>"; };
 		CD110FD01CBF447300FCA6DC /* TestCoredataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoredataController.m; sourceTree = "<group>"; };
 		CD110FD21CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -93,7 +79,6 @@
 		CDE3947A1CC09D610079FB2E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CDF95AFB1CC4E3A900E6416B /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		CDF95AFC1CC4E3A900E6416B /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		E22FD6461CCE36AE0060480A /* HttpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpController.h; sourceTree = "<group>"; };
 		E22FD6471CCE36AE0060480A /* HttpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpController.m; sourceTree = "<group>"; };
 		E2FCB4B01CCF7DAB00790B16 /* HttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
@@ -112,8 +97,6 @@
 		E2FCB4CF1CCFD66900790B16 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		E2FCB4D11CCFE51C00790B16 /* LoginResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResp.h; sourceTree = "<group>"; };
 		E2FCB4D21CCFE51C00790B16 /* LoginResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResp.m; sourceTree = "<group>"; };
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,17 +104,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				9CB561E98FFE045A9C1A06F5 /* libPods.a in Frameworks */,
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		AB1E0F43CA9B8A22C4A08E3C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +128,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 		CD110FCE1CBF444A00FCA6DC /* TestCoredata */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,11 +310,8 @@
 				CD110FD51CBF495F00FCA6DC /* RegisterEntity.m */,
 				CD5427901CAC0324003543AE /* wyxc */,
 				CD54278F1CAC0324003543AE /* Products */,
-<<<<<<< HEAD
 				AB1E0F43CA9B8A22C4A08E3C /* Pods */,
 				B03F2D9C99F203E5605BED75 /* Frameworks */,
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			);
 			sourceTree = "<group>";
 		};
@@ -352,14 +326,11 @@
 		CD5427901CAC0324003543AE /* wyxc */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				E2FCB4C31CCFD2DB00790B16 /* Login */,
 				E2FCB4BD1CCF834200790B16 /* Data */,
 				E2FCB4B91CCF82F600790B16 /* Cache */,
 				E2FCB4A51CCF7D6B00790B16 /* Base */,
 				E22FD6421CCE36540060480A /* test */,
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 				CD110FCE1CBF444A00FCA6DC /* TestCoredata */,
 				CD125C2D1CAF4F3400388AE8 /* Storyboards */,
 				CD125C361CAF501500388AE8 /* Main */,
@@ -369,10 +340,6 @@
 				CD5427AA1CAC0C6C003543AE /* Discovery */,
 				CD5427A91CAC0C5D003543AE /* Me */,
 				CDF95AFA1CC4E34000E6416B /* Register */,
-<<<<<<< HEAD
-=======
-				CD5427A81CAC0C20003543AE /* Login */,
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 				CD5427941CAC0324003543AE /* AppDelegate.h */,
 				CD5427951CAC0324003543AE /* AppDelegate.m */,
 				CD54279A1CAC0324003543AE /* Main.storyboard */,
@@ -394,18 +361,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
-		CD5427A81CAC0C20003543AE /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				CD110FCB1CBF441300FCA6DC /* LoginController.h */,
-				CD110FCC1CBF441300FCA6DC /* LoginController.m */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 		CD5427A91CAC0C5D003543AE /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,7 +400,6 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		E22FD6421CCE36540060480A /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,8 +565,6 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -620,18 +572,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD5427A51CAC0324003543AE /* Build configuration list for PBXNativeTarget "wyxc" */;
 			buildPhases = (
-<<<<<<< HEAD
 				3475AFEED9B65136FBDA747A /* Check Pods Manifest.lock */,
 				CD54278A1CAC0324003543AE /* Sources */,
 				CD54278B1CAC0324003543AE /* Frameworks */,
 				CD54278C1CAC0324003543AE /* Resources */,
 				657F85CB1DC7B3A470409662 /* Embed Pods Frameworks */,
 				2D115F5A0D1459B7535FD077 /* Copy Pods Resources */,
-=======
-				CD54278A1CAC0324003543AE /* Sources */,
-				CD54278B1CAC0324003543AE /* Frameworks */,
-				CD54278C1CAC0324003543AE /* Resources */,
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			);
 			buildRules = (
 			);
@@ -693,7 +639,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-<<<<<<< HEAD
 /* Begin PBXShellScriptBuildPhase section */
 		2D115F5A0D1459B7535FD077 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -742,15 +687,12 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 /* Begin PBXSourcesBuildPhase section */
 		CD54278A1CAC0324003543AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD125C521CAF5A7A00388AE8 /* HomeController.m in Sources */,
-<<<<<<< HEAD
 				E2FCB4B81CCF7EF100790B16 /* Common.m in Sources */,
 				E2FCB4C01CCF834200790B16 /* GlobalData.m in Sources */,
 				CD125C3A1CAF508800388AE8 /* MainController.m in Sources */,
@@ -767,25 +709,11 @@
 				CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */,
 				E2FCB4C91CCFD30300790B16 /* LoginController.m in Sources */,
 				E22FD6481CCE36AE0060480A /* HttpController.m in Sources */,
-=======
-				CD125C3A1CAF508800388AE8 /* MainController.m in Sources */,
-				CD125C551CAF5A9600388AE8 /* ContactsController.m in Sources */,
-				CD125C581CAF5AB000388AE8 /* CalendarController.m in Sources */,
-				CDF95AFD1CC4E3A900E6416B /* RegisterController.m in Sources */,
-				CD5427961CAC0324003543AE /* AppDelegate.m in Sources */,
-				CD110FCD1CBF441300FCA6DC /* LoginController.m in Sources */,
-				CD110FD11CBF447300FCA6DC /* TestCoredataController.m in Sources */,
-				CD110FD61CBF495F00FCA6DC /* RegisterEntity+CoreDataProperties.m in Sources */,
-				CD110FC91CBF3F3C00FCA6DC /* Model.xcdatamodeld in Sources */,
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 				CD110FD71CBF495F00FCA6DC /* RegisterEntity.m in Sources */,
 				CD5427931CAC0324003543AE /* main.m in Sources */,
 				CD125C5B1CAF5ACC00388AE8 /* DiscoveryController.m in Sources */,
 				CD125C5E1CAF5ADE00388AE8 /* MeController.m in Sources */,
-<<<<<<< HEAD
 				E2FCB4D31CCFE51C00790B16 /* LoginResp.m in Sources */,
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,10 +821,7 @@
 		};
 		CD5427A61CAC0324003543AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
 			baseConfigurationReference = 124467268DC3A3F3D667D62E /* Pods.debug.xcconfig */;
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = wyxc/PrefixHeader.pch;
@@ -910,10 +835,7 @@
 		};
 		CD5427A71CAC0324003543AE /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
 			baseConfigurationReference = 96E86BF82D20CD5D4236D26E /* Pods.release.xcconfig */;
-=======
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = wyxc/PrefixHeader.pch;

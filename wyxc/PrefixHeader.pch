@@ -53,7 +53,6 @@
 #define NAV_BAR_COLOR RGB(63.0, 175.0, 255.0)
 #define FIELD_PLACEHOLDER_COLOR RGB(204, 204, 204)
 #define BUTTON_BACKGROUND_COLOR RGB(40.0, 170.0, 250.0)
-<<<<<<< HEAD
 #define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
 
 
@@ -728,6 +727,3 @@ arc4random_uniform(256) / 255.0)
 #define TEST_TOKEN @"786d9c76161961524cfc29db4df08284"
 #define TEST_WEBVIEW_URL @"http://pages.supcar.me/message%2F20150922%2F59542753-c6ea-4b4e-b8a9-edb86f8b0069.html"
 /**********测试临时**********/
-=======
-#define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
->>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
