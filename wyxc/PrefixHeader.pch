@@ -53,4 +53,681 @@
 #define NAV_BAR_COLOR RGB(63.0, 175.0, 255.0)
 #define FIELD_PLACEHOLDER_COLOR RGB(204, 204, 204)
 #define BUTTON_BACKGROUND_COLOR RGB(40.0, 170.0, 250.0)
+<<<<<<< HEAD
 #define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+ ************************
+ 超级学车复制过来的宏定义，
+ 可删减！
+ ************************
+ ***********************/
+#import "Common.h"
+
+#define APP_NAME @"超级学车"
+#define APP_NAME_EN @"cjxc"
+#define APP_VERSION @"1.02"
+#define APP_OFFICAL_URL @"http://www.supcar.me"
+#define APP_DOWNLOAD_URL @"http://www.supcar.me/app"
+#define APP_SERVICE_NO @"020-29066383"
+//定义服务器根路径
+//#define BASE_URL @"http://www.supcar.me:18080"
+#pragma mark Product Base URL
+//#define BASE_URL @"http://www.supcar.me:19080"
+#define BASE_URL @"http://www.supcar.me/api/v1"
+
+//第一次运行
+//教练
+#define FIRST_LAUNCH_COACH @"firstCoach"
+//学员
+#define FIRST_LAUNCH_STUDENT @"firstStudent"
+
+//定义服务器路径
+#define SERVER_PATH(v) [NSString stringWithFormat:@"%@/%@", BASE_URL, v]
+
+#pragma mark 动态页面地址
+#define BASE_WEBPAGE_URL @"http://www.supcar.me/cjxc/"
+#define SERVER_PATH_WEBPAGE(v)                                                 \
+[NSString stringWithFormat:@"%@%@", BASE_WEBPAGE_URL, v]
+
+#define DEVICE_TYPE_IOS @"1"
+
+//图片访问服务URL
+#define IMAGE_BASE_URL @"http://supercar.oss-cn-shenzhen.aliyuncs.com"
+
+//关于我们URL
+#define ABOUT_US_URL @"http://pages.supcar.me/aboutus/index.html"
+//帮助页面URL
+#define ABOUT_HELP_URL @"http://pages.supcar.me/aboutus/help.html"
+//教练注册协议
+#define COACH_PROTOCOL_URL                                                     \
+@"http://pages.supcar.me/aboutus/jiaolianfuwuxieyi.html"
+//用户服务条款
+#define USER_PROTOCOL_URL                                                      \
+@"http://pages.supcar.me/aboutus/yonghufuwutiaokuan.html"
+//知识产权声明
+#define IPR_URL @"http://pages.supcar.me/aboutus/zhishichanquanshengming.html"
+
+#define SERVER_PATH1(m) SERVER_PATH(A)
+
+#define iOS [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ? 1 : 0
+
+#define iOS8                                                                   \
+[[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ? 1 : 0
+
+#pragma mark - 功能部分
+// use dlog to print while in debug model
+#ifdef DEBUG
+#define DLog(fmt, ...)                                                         \
+NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#pragma mark - color functions
+// rgb颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue)                                               \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0         \
+green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0            \
+blue:((float)(rgbValue & 0xFF)) / 255.0                     \
+alpha:1.0]
+
+//带有RGBA的颜色设置
+//#define COLOR(R, G, B, A)                                                      \
+//  [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:A]
+
+// 获取RGB颜色
+#define RGBA(r, g, b, a)                                                       \
+[UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
+#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+
+#define RGBAF(r, g, b, a) [UIColor colorWithRed:r green:g blue:b alpha:a]
+#define RGBF(r, g, b) RGBAF(r, g, b, 1.0f)
+
+#pragma mark - 界面 部分
+#define NavigationBar_HEIGHT 44                                //导航控制器
+#define SCREEN_SIZE [UIScreen mainScreen].currentMode.size     //屏幕Size
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width) //屏幕宽度
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height) //屏幕高度
+
+#pragma mark - 系统 部分
+#define IOS_VERSION                                                            \
+[[[UIDevice currentDevice] systemVersion] floatValue] //当前设备的系统版本
+#define CurrentSystemVersion                                                   \
+([[UIDevice currentDevice] systemVersion]) //当前的系统版本
+#define CurrentLanguage                                                        \
+([[NSLocale preferredLanguages] objectAtIndex:0]) //当前的设备的默认语言
+#define iPhone4 1
+#define iPhone5 2
+#define iPhone6 3
+#define iPhone6p 4
+
+#define CURRENT_DEVICE [Utils currentDevice]
+
+#define isRetina                                                               \
+([UIScreen instancesRespondToSelector:@selector(currentMode)]                \
+? CGSizeEqualToSize(CGSizeMake(640, 960),                               \
+[[UIScreen mainScreen] currentMode].size)           \
+: NO)
+
+// 是否模拟器
+#define isSimulator                                                            \
+(NSNotFound !=                                                               \
+[[[UIDevice currentDevice] model] rangeOfString:@"Simulator"].location)
+
+// 是否iPad
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+// 是否iPad
+#define someThing                                                              \
+(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? ipad : iphone
+
+#define DEFAULT_PAGE_SIZE 8
+// 3DES密钥
+#define PARA_SECRET @"687dc587873641b39db1c49a"
+// 3DES加密向量
+#define PARA_IV @"4c323ea3"
+
+#pragma mark - UserDefaults缓存key
+//本地缓存用户
+#define UD_USER_KEY @"user"
+#define UD_DICTS_KEY @"dicts"
+#define UD_REGION_KEY @"region"
+#define UD_REGION_NODE_NAME_KEY @"regionNodeName"
+#define UD_DISTURB_SETTING_KEY @"disturbSetting"
+
+#define UD_ACCOUNT_KEY @"account"
+#define UD_PASSWORD_KEY @"password"
+#define UD_ACCESS_TOKEN_KEY @"accessToken"
+#define UD_HOT_CITY_KEY @"hotCityDictionary"
+
+#pragma mark 推送通知本地持久化Key
+#define UD_PUSH_NOTICE_KEY @"pushNoticeKey"
+#define UD_PUSH_SKILL_KEY @"pushSkillKey"
+#define UD_PUSH_CONSULT_KEY @"pushConsuleKey"
+#define UD_PUSH_SUBSCRIBE_KEY @"pushSubscribeKey"
+
+#pragma mark - 常用时间格式化START
+#define VERIFY_CODE_TIME 60
+#define DATE_FORMAT_YMDHMS @"yyyy-MM-dd HH:mm:ss"
+#define DATE_FORMAT_YMDHM @"yyyy-MM-dd HH:mm"
+#define DATE_FORMAT_YMDH @"yyyy-MM-dd HH"
+#define DATE_FORMAT_YMD @"yyyy-MM-dd"
+#define DATE_FORMAT_HM @"HH:mm"
+#define DATE_FORMAT_YMD1 @"yy/MM/dd"
+
+//#pragma mark 定义业务类型
+//#define BIZ_TYPE_NOTICE 1  //通知公告业务类型
+//#define BIZ_TYPE_CONSULT 2 //咨询业务类型
+
+#pragma mark Push Biz Type
+#define PUSH_BIZ_TYPE_SUBSCRIBE @"1"             //学员预约练车
+#define PUSH_BIZ_TYPE_COACH_APPROVE @"2"         //教练同意/拒绝预约
+#define PUSH_BIZ_TYPE_COACH_UPDATE_SCHEDULE @"3" //教练更新日程设置
+#define PUSH_BIZ_TYPE_COACH_ADD_OR_UPDATE_SCHEDULE @"4" //教练新增、更新设置
+#define PUSH_BIZ_TYPE_COACH_DELETE_SCHEDULE @"5" //教练删除日程设置
+#define PUSH_BIZ_TYPE_SCHEDULE_SUBSCRIBE_NOTIFIY                               \
+@"6" //定时：通知学员预约快过期的日程设置
+#define PUSH_BIZ_TYPE_STUDENT_EVALUATE_COACH @"7" //学员评价教练
+#define PUSH_BIZ_TYPE_COACH_ASSIGN_STUDENT @"8" //教练安排（指派）学员学车
+#define PUSH_BIZ_TYPE_SCHEDULE_SUBSCRIBE_NOTIFIY_BEFORE_ONE_DAY                \
+@"9" //定时：提前一天通知学员准时练车
+#define PUSH_BIZ_TYPE_COACH_NOTICE @"10"           //教练通知学员
+#define PUSH_BIZ_TYPE_COACH_NOTICE_SUBSCRIBE @"11" //教练通知学员预约练车
+#define PUSH_BIZ_TYPE_PLATFORM_NOTICE @"12"        //平台发布通知
+#define PUSH_BIZ_TYPE_COACH_SKILL @"13"            //教练发布学车技巧
+#define PUSH_BIZ_TYPE_PLATFORM_SKILL @"14"         //平台发布学车技巧
+#define PUSH_BIZ_TYPE_STUDENT_CONSULT @"15"        //学员发起咨询
+#define PUSH_BIZ_TYPE_COACH_REPLY_CONSULT @"16"    //教练回复学员
+#define PUSH_BIZ_TYPE_COACH_MODIFY_CONSULT @"17" //教练修改回复
+#define PUSH_BIZ_TYPE_PLATFORM_MESSAGE @"18"     //平台发布消息
+#define PUSH_BIZ_TYPE_STUDENT_SIGNUP @"19"       //学员预约报名
+#define PUSH_BIZ_TYPE_STUDENT_SET_COACH @"20"    //学员设置教练
+#define PUSH_BIZ_TYPE_STUDENT_UNBIND_COACH @"21" //学员取消绑定教练
+#define PUSH_BIZ_TYPE_COACH_BIND_STUDENT @"22"   //教练绑定学员
+#define PUSH_BIZ_TYPE_COACH_DELETE_STUDENT @"23" //教练删除学员
+#define PUSH_BIZ_TYPE_USER_LOGIN @"24"           //账号在其他地方登录
+
+#define TABBAR_TITLE_INDEX @"首页"
+#define TABBAR_TITLE_STUDENT @"学员"
+#define TABBAR_TITLE_DISCOVERY @"发现"
+#define TABBAR_TITLE_ME @"我"
+#define TABBAR_TITLE_STUDY_HISTORY @"学车记"
+
+#pragma mark - URLS
+/**********接口URL配置Start**********/
+//登录
+#define URL_LOGIN @"login"
+//更新DeviceToken
+#define URL_UPDATE_DEVICETOKEN @"setPush"
+//首页焦点图片列表
+#define INDEX_FOCUS_LIST @"focus/list"
+//首页消息列表
+#define INDEX_MESSAGE_LIST @"message/list"
+//判断用户是否已注册
+#define URL_DETECT_MOBILE_NO @"isSignUp"
+//获取短信验证码
+#define URL_GET_VERIFY_CODE @"verify"
+//用户注册
+#define URL_REGISTER @"signUp"
+//用户忘记密码
+#define URL_FORGOT_PASSWORD @"reset"
+
+//教练获取日程摘要信息
+#define URL_SCHEDULE_SUMMARY @"schedule/listDateStatus"
+//学员获取教练日程摘要信息
+#define URL_SCHEDULE_SUMMARY_FOR_STUDENT @"appoint/listDateStatus"
+//教练设置信息和教练日程信息
+#define URL_SCHEDULE_LIST @"schedule/list"
+//新增日程
+#define URL_ADD_SCHEDULE @"schedule/add"
+//通知学员
+#define URL_NOTICE_STUDENTS @"schedule/notice"
+//获取教练常用练车地点
+#define URL_COACH_ADDRESS @"common/addr/list"
+////更新日程设置
+//#define URL_UPDATE_SCHEDULESETTING @"schedule/updateSet"
+//新增(更新)日程设置
+#define URL_ADD_OR_UPDATE_SCHEDULESETTING @"schedule/addOrUpdateSet"
+//获取教练所有设置
+#define URL_ALL_SCHEDULE_SETTINGS @"schedule/listSet"
+//获取可约时段
+#define URL_PERIODS @"appoint/listTime"
+//学员预约学车
+#define URL_SUBSCRIBE @"appoint/add"
+//获取预约记录
+#define URL_SUBSCRIBE_HISTORY @"appoint/list"
+//获取预约详情
+#define URL_SUBSCRIBE_DETAIL @"appoint/get"
+//教练审批学员预约
+#define URL_SUBSCRIBE_CONFIRM @"appoint/confirm"
+//学员取消预约
+#define URL_SUBSCRIBE_DEL @"appoint/del"
+//教练删除设置
+#define URL_SETTING_DEL @"schedule/delSet"
+//教练设置详情
+#define URL_SCHEDULE_SETTING_DETAIL @"schedule/getSet"
+//教练日程详情(批量)
+#define URL_BATCH_SCHEDULE_DETAIL @"schedule/getBatch"
+//教练日程详情
+#define URL_SCHEDULE_DETAIL @"schedule/get"
+//更新学车记评价和心得
+#define URL_STUDY_HISTORY_EVALUTION_UPDATE @"schedule/update"
+//教练免打扰开启(关闭)
+#define URL_SUBSCRIBE_NO_DISTURB_SETTING @"appoint/noDisturb"
+//获取教练免打扰状态
+#define URL_SUBSCRIBE_NO_DISTURB_STATUS @"appoint/getNoDisturb"
+
+//新增学员
+#define URL_ADD_STUDENT @"student/add"
+//导入学员
+#define URL_IMPORT_STUDENTS_FROM_CONTACTS @"student/batchAdd"
+//同步字典
+#define URL_SYNC_DICT @"dict/sync"
+//同步区域
+#define URL_SYNC_AREA @"area/sync"
+//获取我的基本信息(教练身份)
+#define URL_COACH_GET_BASE @"coach/getMyBase"
+//获取我的基本信息(学员身份)
+#define URL_STUDENT_GET_BASE @"student/getMyBase"
+//获取某个教练的基本信息
+#define URL_GET_COACH_BASE @"coach/getBase"
+//获取我的全部信息(教练身份)
+#define URL_COACH_GET_FULL @"coach/getMyFull"
+//获取我的全部信息(学员身份)
+#define URL_STUDENT_GET_FULL @"student/getFull"
+//修改详细信息(教练身份)
+#define URL_UPDATE_COACH_FULL @"coach/update"
+//修改详细信息(学员身份)
+#define URL_UPDATE_STUDENT_FULL @"student/update"
+//上传图片
+#define URL_UPLOAD_IMAGE @"saveImage"
+//获取驾校列表
+#define URL_GET_SCHOOL_LIST @"school/list"
+//获取套餐列表
+#define URL_GET_ADMISSION_LIST @"admissions/list"
+//获取教练可报名套餐列表
+#define URL_GET_ADMISSION_STUDENT_LIST @"admissions/listToStu"
+//新增或更新招生套餐
+#define URL_ADD_OR_UPDATE_ADMISSION @"admissions/addOrUpdate"
+//删除招生套餐
+#define URL_DELETE_ADMISSION @"admissions/del"
+//获取招生套餐详情
+#define URL_GET_ADMISSION_DETAIL @"admissions/get"
+//排行榜
+#define URL_GET_RANK @"student/rank"
+//学员学时统计
+#define URL_GET_STUDENT_STATISTIC @"student/statistic"
+//我的教练
+#define URL_MY_COACH_LIST @"student/listMyCoach"
+//搜索绑定教练
+#define URL_SEARCH_BIND_COACH_LIST @"coach/searchList"
+//绑定教练
+#define URL_BIND_COACH @"student/setCoach"
+//取消绑定教练
+#define URL_UNBIND_COACH @"student/delCoach"
+//设定主教练
+#define URL_BIND_MASTER_COACH @"student/setMainCoach"
+//教练或学员获取通知公告列表
+#define URL_NOTICE_LIST @"notice/list"
+//教练或学员获取学车技巧
+#define URL_SKILL_LIST @"skill/list"
+//添加取消收藏
+#define URL_COLLECT_ADD @"collect/add"
+//发布通知
+#define URL_PUB_NOTICE @"notice/pub"
+//发布学车技巧
+#define URL_PUB_SKILL @"skill/pub"
+//新增咨询,回复咨询
+#define URL_PUB_CONSULT @"consult/send"
+//咨询列表
+#define URL_CONSULT_LIST @"consult/list"
+//收藏列表
+#define URL_COLLECT_LIST @"collect/list"
+//浏览列表
+#define URL_BROWSER_LIST @"browse/list"
+//查找教练详细信息
+#define URL_FIND_COACH_DETAIL @"coach/detail"
+//修改密码
+#define URL_CHANGE_PASSWORD @"chgPwd"
+//修改手机号码
+#define URL_CHANGE_MOBILE @"chgLoginName"
+//获取教练配置
+#define URL_LOAD_CONFIG @"coach/config/get"
+//保存教练配置
+#define URL_CONFIG_SAVE @"coach/config/update"
+//保存常用地址
+#define URL_COMMON_ADDRESS_SAVE @"common/addr/addOrUpdate"
+//删除常用地址
+#define URL_COMMON_ADDRESS_DELETE @"common/addr/del"
+//学车记录
+#define URL_LOAD_STUDY_HISTORY @"schedule/listTrainingRecord"
+//指派,通知获取可选学员
+#define URL_LOAD_STUDENT_LIST @"schedule/listStudent"
+//获取全部通讯录学员
+#define URL_LOAD_STUDENT_NORMAL_LIST @"student/list"
+//发现
+#define URL_LOAD_DISCOVERY @"focus/find"
+//预约报名
+#define URL_LOAD_ADMISSION_SIGUP @"admissions/signUp"
+//添加最近浏览
+#define URL_ADD_BROWSE @"browse/add"
+
+/***通讯录模块***/
+#define DEV 1
+
+//联系人
+//联系人列表
+#define CONTACT_CONTACT_LIST @"contact/list"
+//删除学员
+#define CONTACT_STUDENT_DEL @"student/del"
+//学员列表
+#define CONTACT_STUDENT_LIST @"student/list"
+//教练评价列表
+#define CONTACT_COACH_SCORE_LIST @"coach/listEvaluation"
+//学员详细资料
+#define CONTACT_STUDENT_DETAIL @"student/get"
+//教练基本信息
+#define CONTACT_COACH_BASE @"coach/getBase"
+//随便看看
+#define CONTACT_RANDOM @"contact/listRandom"
+//可能认识
+#define CONTACT_MAYBE_KNOW @"contact/listMabyKnowUser"
+//添加好友
+#define CONTACT_APPLY @"contact/apply"
+//查找好友
+#define CONTACT_SEARCH @"contact/searchFriend"
+//获取好友申请列表
+#define CONTACT_APPLY_LIST @"contact/listApply"
+//同意/拒绝好友请求
+#define CONTACT_ACCEPT_APPLY @"contact/acceptFriendApply"
+
+//附近教练
+#define DISCOVERY_NEAR_COACH @"coach/listNear"
+//教练列表
+#define DISCOVERY_SEARCH_COACH @"coach/list"
+//教练列表
+#define DISCOVERY_SEARCH_PARA @"coach/syncSearchPara"
+//教练对比
+#define DISCOVERY_COACH_COMPAIR @"adminssions/contrast/info"
+//城市列表
+#define DISCOVERY_CITYS @"area/listCity"
+//区县列表
+#define DISCOVERY_DISTRICT @"area/listDistrict"
+
+//获取学员全部信息
+#define CONTACT_STUDENT_FULL @"student/getFull"
+//获取学员学车记录列表
+#define CONTACT_STUDENT_TRAINNING_RECORD @"schedule/listTrainingRecord"
+//评价学员
+#define CONTACT_EVAL_STUDENT @"schedule/evalStudent"
+//发送聊天
+#define CONTACT_SEND_CHAT @"contact/sendChat"
+//发送聊天
+#define CONTACT_CHAT_LIST @"contact/listChat"
+//添加考试记录
+#define CONTACT_EXAM_ADD @"exam/addOrUpdate"
+//删除考试记录
+#define CONTACT_EXAM_DEL @"exam/del"
+//更新学员信息
+#define CONTACT_STUDNET_UPDATE @"student/update"
+/***通讯录模块***/
+/**********接口URL配置End**********/
+
+#pragma markr WebURLS
+#define URL_FORSHARE_COACH_DETAIL @"share/coach"
+
+#pragma mark - Error Messages
+/**********提示消息Start**********/
+#define CONFIRM_TITLE @"确定"
+#define CANCEL_TITLE @"取消"
+#define LOGIN_USERNAME_EMPTY_MSG @"请输入手机号码"
+#define LOGIN_PASSWORD_EMPTY_MSG @"请输入密码"
+#define LOGIN_ERROR_MSG @"登录错误"
+#define LOGIN_SUCCESS_MSG @"登录成功"
+#define GET_VERIFY_CODE_ERROR_MSG @"获取验证码失败"
+#define LOAD_SCHEDULE_SUMMARY_ERROR_MSG @"获取教练日程状态失败"
+#define DICT_SYNC_ERROR_MSG @"同步字典失败"
+#define AREA_SYNC_ERROR_MSG @"同步区域失败"
+#define LOAD_SCHEDULE_LIST_ERROR_MSG @"获取教练日程设置失败"
+#define SAVE_SCHEDULE_SETTING_ERROR_MSG @"添加日程失败"
+#define LOAD_ALL_SCHEDULE_SETTING_ERROR_MSG @"获取所有设置失败"
+#define LOAD_PERIODS_ERROR_MSG @"获取可选时段失败"
+#define SUBSCRIBE_ERROR_MSG @"预约学车失败"
+#define LOAD_SUBSCRIBE_HISTORY_ERROR_MSG @"获取预约学车数据失败"
+#define LOAD_SUBSCRIBE_DETAIL_ERROR_MSG @"获取预约详情失败"
+#define LOAD_BATCH_SCHEDULE_DETAIL_ERROR_MSG @"获取批量日程详情失败"
+#define LOAD_SCHEDULE_DETAIL_ERROR_MSG @"获取日程详情失败"
+#define SUBSCRIBE_DISTURB_SETTING_ERROR_MSG @"修改免免打扰设置失败"
+#define SUBSCRIBE_DISTURB_STATUS_ERROR_MSG @"修改免免打扰设置失败"
+#define SUBSCRIBE_CONFIRM_ERROR_MSG @"预约审批失败"
+#define REMOVE_SETTING_ERROR_MSG @"删除设置失败"
+#define SUBSCRIBE_DEL_ERROR_MSG @"取消预约失败"
+#define REGISTER_ERROR_MSG @"用户注册失败"
+#define FORGOT_PASSWORD_ERROR_MSG @"重设密码失败"
+#define LOAD_SCHEDULE_SETTING_DETAIL_ERROR_MSG @"获取预约详情失败"
+#define UPDATE_STUDY_HISTORY_EVALUTION_ERROR_MSG @"更新评价失败"
+#define ADD_STUDENT_ERROR_MSG @"新增学员失败"
+#define IMPORT_STUDENTS_FROM_CONTACTS_ERROR_MSG @"导入学员失败"
+#define LOAD_RANK_ERROR_MSG @"获取排行榜数据失败"
+#define LOAD_MY_COACH_LIST_ERROR_MSG @"获取我的教练数据失败"
+#define SEARCH_BIND_COACH_LIST_ERROR_MSG @"获取教练数据失败"
+#define BIND_COACH_ERROR_MSG @"绑定教练数据失败"
+#define UNBIND_COACH_ERROR_MSG @"解绑教练数据失败"
+#define BIND_MASTER_COACH_ERROR_MSG @"设置主教练教练数据失败"
+#define LOAD_NOTICE_LIST_ERROR_MSG @"获取通知列表失败"
+#define LOAD_CONSULT_LIST_ERROR_MSG @"获取咨询列表失败"
+#define COLLECT_ADD_ERROR_MSG @"添加收藏失败"
+#define COLLECT_CANCEL_ERROR_MSG @"取消收藏失败"
+#define PUB_NOTICE_ERROR_MSG @"发布通知失败"
+/**********提示消息End**********/
+
+/**********字体,颜色定义**********/
+//统一字体名称
+//#define FONT_NAME @"DroidSansFallback"
+#pragma mark - Font Functions
+#define FONT_NAME @"FZLanTingHei-R-GBK"
+#define FONT_NAME_BOLD @"FZLanTingHei-DB-GBK"
+//设置字体
+#define FONT(F) [UIFont fontWithName:FONT_NAME size:F]
+#pragma mark - Common Colors
+//定义常用字体字号
+#define FONT9 [UIFont fontWithName:FONT_NAME size:9]
+#define FONT10 [UIFont fontWithName:FONT_NAME size:10]
+#define FONT11 [UIFont fontWithName:FONT_NAME size:11]
+#define FONT12 [UIFont fontWithName:FONT_NAME size:12]
+#define FONT13 [UIFont fontWithName:FONT_NAME size:13]
+#define FONT14 [UIFont fontWithName:FONT_NAME size:14]
+#define FONT15 [UIFont fontWithName:FONT_NAME size:15]
+#define FONT155 [UIFont fontWithName:FONT_NAME size:15.5]
+#define FONT16 [UIFont fontWithName:FONT_NAME size:16]
+#define FONT17 [UIFont fontWithName:FONT_NAME size:17]
+#define FONT18 [UIFont fontWithName:FONT_NAME size:18]
+#define FONT19 [UIFont fontWithName:FONT_NAME size:19]
+#define FONT20 [UIFont fontWithName:FONT_NAME size:20]
+#define FONT21 [UIFont fontWithName:FONT_NAME size:21]
+#define FONT40 [UIFont fontWithName:FONT_NAME size:40]
+//定义常用字体字号
+#define FONTB9 [UIFont fontWithName:FONT_NAME_BOLD size:9]
+#define FONTB10 [UIFont fontWithName:FONT_NAME_BOLD size:10]
+#define FONTB11 [UIFont fontWithName:FONT_NAME_BOLD size:11]
+#define FONTB12 [UIFont fontWithName:FONT_NAME_BOLD size:12]
+#define FONTB13 [UIFont fontWithName:FONT_NAME_BOLD size:13]
+#define FONTB14 [UIFont fontWithName:FONT_NAME_BOLD size:14]
+#define FONTB15 [UIFont fontWithName:FONT_NAME_BOLD size:15]
+#define FONTB155 [UIFont fontWithName:FONT_NAME_BOLD size:15.5]
+#define FONTB16 [UIFont fontWithName:FONT_NAME_BOLD size:16]
+#define FONTB17 [UIFont fontWithName:FONT_NAME_BOLD size:17]
+#define FONTB18 [UIFont fontWithName:FONT_NAME_BOLD size:18]
+#define FONTB19 [UIFont fontWithName:FONT_NAME_BOLD size:19]
+#define FONTB20 [UIFont fontWithName:FONT_NAME_BOLD size:20]
+#define FONTB21 [UIFont fontWithName:FONT_NAME_BOLD size:21]
+#define FONTB40 [UIFont fontWithName:FONT_NAME_BOLD size:40]
+//定义常用颜色
+#define MAIN_TEXT_COLOR RGB(33.0, 33.0, 33.0)
+#define SUMMARY_TEXT_COLOR RGB(153.0, 153.0, 153.0)
+#define TOOLBAR_TEXT_COLOR RGB(102.0, 102.0, 102.0)
+//表单标题常用颜色
+#define FORM_TITLE_COLOR RGB(67, 67, 67)
+//表单字段常用颜色
+#define FORM_FIELD_COLOR RGB(102, 102, 102)
+
+#define NAV_BAR_COLOR RGB(63.0, 175.0, 255.0)
+#define FIELD_PLACEHOLDER_COLOR RGB(204, 204, 204)
+#define BUTTON_BACKGROUND_COLOR RGB(40.0, 170.0, 250.0)
+#define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
+//日历可约
+#define CALENDAR_DAY_HALF_COLOR RGB(63, 175, 255)
+//不可约
+#define CALENDAR_DAY_BUSY_COLOR RGB(255, 68, 68)
+//全天可约
+#define CALENDAR_DAY_FREE_COLOR RGB(153, 204, 0)
+#define CALENDAR_HEADER_COLOR RGB(245, 245, 245)
+//系统表格默认单元格分割线颜色
+#define DEFAULT_TABLEVIEW_SPERATOR_COLOR RGB(199, 199, 204) //背景色
+//#define BACKGROUND_COLOR                                                       \
+//  [UIColor colorWithRed:242.0 / 255.0                                          \
+//                  green:236.0 / 255.0                                          \
+//                   blue:231.0 / 255.0                                          \
+//                  alpha:1.0]
+#define BACKGROUND_COLOR RGB(242, 236, 231)
+
+//清除背景色
+#define CLEARCOLOR [UIColor clearColor]
+#define COACHS_TEXT_COLOR RGB(101, 101, 101)
+#define COACHS_TEXT_COLOR_SELECTED RGB(40, 170, 250)
+#define COACHS_PRICE_COLOR RGB(241, 83, 83)
+#define COACHS_PROP_COLOR RGB(180, 180, 180)
+//随机色
+#define RandomColor                                                            \
+RGB(arc4random_uniform(256) / 255.0, arc4random_uniform(256) / 255.0,        \
+arc4random_uniform(256) / 255.0)
+
+//#define RGBCOLOR(r, g, b)                                                      \
+//  [UIColor colorWithRed:(r) / 255.0f                                           \
+//                  green:(g) / 255.0f                                           \
+//                   blue:(b) / 255.0f                                           \
+//                  alpha:1]
+//#define RGBACOLOR(r, g, b, a)                                                  \
+//  [UIColor colorWithRed:(r) / 255.0f                                           \
+//                  green:(g) / 255.0f                                           \
+//                   blue:(b) / 255.0f                                           \
+//                  alpha:(a)]
+/**********字体,颜色定义**********/
+/**********UI组件**********/
+#define DEFAULT_BUTTON_RADIUS (CGFloat)5
+/**********UI组件**********/
+
+#pragma mark - OSS
+/**********oss相关配置信息**********/
+#define OSS_URL_EXPIRE_TIME 3600 //生成的OSS链接失效时间
+#define OSS_ACCESS_KEY @"b3kES27I90XRtg0I"
+#define OSS_ACCESS_SECRET @"sV5cw0kF1KQnHnTCxnuVZh7W6R5va8"
+//#define OSS_HOST_ID @"oss-cn-shenzhen.aliyuncs.com"
+#define OSS_HOST_ID @"http://oss-cn-shenzhen.aliyuncs.com"
+#define OSS_PICTURE_HOST_ID @"image.wxease.com"
+//#define OSS_BUCKET_ID @"sup-learndrive"
+#define OSS_BUCKET_ID @"supercar"
+#define OSS_USER_PATH @"user"
+#define OSS_NOTICE_PATH @"notice"
+#define OSS_COACH_IDCARD_PATH @"coach/idcard"
+#define OSS_COACH_CERT_PATH @"coach/cert"
+#define FILE_TYPE_PNG @"png"
+#define FILE_TYPE_JPG @"pjg"
+//聊天相关图片目录
+#define OSS_MESSAGE_PATH @"message"
+// oss自动生成的三级URL
+//#define OSS_URL_ALI_DOMAIN
+//@"sup-learndrive.oss-cn-shenzhen.aliyuncs.com"
+// CDN绑定的CNAME记录
+//#define OSS_CDN_CNAME_DOMAIN @"img.wxease.com"
+
+#pragma mark - 腾讯云分析
+#define MTA_KEY @"IR9M3EJ8DU1K"
+#pragma markr - Bugly
+#define BUGLY_APP_ID @"900018848"
+
+/**********七牛相关配置**********/
+//#define QINIU_AK @"4NxOAHrrLa5qu3c6Zwe6iishFqgnM-BfdBmjibYy"
+//#define QINIU_SK @"YeNVDAk1ePnLtUTzytzhYUh9L9stkYL6QnU2rMCo"
+/**********七牛相关配置**********/
+
+#pragma mark - 文字文案
+//新话题
+#define T_NEW_FORUM_TITLE @"新话题"
+
+#pragma mark -Static Dict Names
+/***静态字典START***/
+//教练用户类型
+#define USER_TYPE_COACH @"0"
+//学员用户类型
+#define USER_TYPE_STUDENT @"1"
+//教练用户类型称呼后缀
+#define USER_TYPE_COACH_NAME @"教练"
+// API请求状态-成功
+#define STATUS_CODE_SUCCESS 1
+// API请求状态-失败
+#define STATUS_CODE_FAILURE 2
+// API请求状态-超时
+#define STATUS_CODE_TIMEOUT 3
+
+#pragma mark 业务类型字典
+#define BIZ_TYPE_MESSAGE 1//消息
+#define BIZ_TYPE_NOTICE 2//通知
+#define BIZ_TYPE_COACH 3//教练
+#define BIZ_TYPE_ADMISSION 4//招生信息
+#define BIZ_TYPE_SKILL 5//学车技巧
+#define BIZ_TYPE_SUBSCRIBE 6//预约练车
+#pragma  mark 促销类型字典
+//#define PRIVILEGE_STUDENT 1
+//#define PRIVILEGE_HOLIDAY 2
+//#define PRIVILEGE_MULTI_PEOPLE 3
+//#define PRIVILEGE_GIVE 4
+//#define PRIVILEGE_OHTER 5
+#define PRIVILEGE_MAP @{@(1):@"学生优惠",@(2):@"假日优惠",@(3):@"团购优惠",@(4):@"赠送礼品",@(5):@"其他优惠"};
+#define SCHEDULE_TYPE_MAP @{@(1):@"单练",@(2):@"混练",@(3):@"其他"};
+// API请求状态-参数不正确
+#define STATUS_CODE_PARAMETER_INCORRECT 4
+/***静态字典END***/
+
+#pragma mark - Dynamic Dict Names
+/**********字典类型Key**********/
+#define DICT_TYPE_KEY_TRAININGCONTENT @"trainingContent"
+#define CONFIRMSTATUS @"confirmStatus"
+/**********字典类型Key**********/
+
+#pragma mark - Test
+/**********测试临时**********/
+#define TEST_TOKEN @"786d9c76161961524cfc29db4df08284"
+#define TEST_WEBVIEW_URL @"http://pages.supcar.me/message%2F20150922%2F59542753-c6ea-4b4e-b8a9-edb86f8b0069.html"
+/**********测试临时**********/
+=======
+#define RED_BUTTON_BACKGROUND_COLOR RGB(255, 68, 68)
+>>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5

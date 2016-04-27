@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZCJ-Zv-r2r">
+=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZCJ-Zv-r2r">
+>>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -91,6 +95,35 @@
             </objects>
             <point key="canvasLocation" x="148" y="-401"/>
         </scene>
+<<<<<<< HEAD
+        <!--Http Controller-->
+        <scene sceneID="ej8-KU-Hgt">
+            <objects>
+                <viewController id="V3C-cm-CKO" customClass="HttpController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xOZ-yz-zAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="6G4-ao-2Yj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VhX-jG-x5F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTe-Xg-gLC">
+                                <rect key="frame" x="238" y="69" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffr-ay-dyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-372"/>
+        </scene>
+=======
+>>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
         <!--Login Controller-->
         <scene sceneID="oS0-WZ-bR8">
             <objects>
@@ -266,7 +299,11 @@
                                                 <userLayoutGuide location="300" affinity="minX"/>
                                                 <userLayoutGuide location="300" affinity="minX"/>
                                                 <userLayoutGuide location="300" affinity="minX"/>
+<<<<<<< HEAD
+                                                <userLayoutGuide location="23" affinity="minY"/>
+=======
                                                 <userLayoutGuide location="22" affinity="minY"/>
+>>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
                                                 <userLayoutGuide location="22" affinity="minY"/>
                                                 <userLayoutGuide location="22" affinity="minY"/>
                                                 <userLayoutGuide location="22" affinity="minY"/>
@@ -287,6 +324,12 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+<<<<<<< HEAD
+                                                    <connections>
+                                                        <action selector="loginButon:" destination="Fep-cZ-hH9" eventType="touchUpInside" id="qrF-I7-Jjk"/>
+                                                    </connections>
+=======
+>>>>>>> 5ca1fb94553c8ce7da9c7f13dd51f704bb7035d5
                                                 </button>
                                             </subviews>
                                             <constraints>
