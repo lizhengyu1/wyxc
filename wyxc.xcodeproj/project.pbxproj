@@ -30,6 +30,9 @@
 		CD5427A11CAC0324003543AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54279F1CAC0324003543AE /* LaunchScreen.storyboard */; };
 		CDF95AFD1CC4E3A900E6416B /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF95AFC1CC4E3A900E6416B /* RegisterController.m */; };
 		E22FD6481CCE36AE0060480A /* HttpController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FD6471CCE36AE0060480A /* HttpController.m */; };
+		E287AD7F1CD272D5003C4E20 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E287AD7E1CD272D5003C4E20 /* Utils.m */; };
+		E287AD861CD287EF003C4E20 /* RegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = E287AD851CD287EF003C4E20 /* RegisterService.m */; };
+		E287AD891CD28830003C4E20 /* DetectMobileNoResp.m in Sources */ = {isa = PBXBuildFile; fileRef = E287AD881CD28830003C4E20 /* DetectMobileNoResp.m */; };
 		E2FCB4B21CCF7DAB00790B16 /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCB4B11CCF7DAB00790B16 /* HttpService.m */; };
 		E2FCB4B81CCF7EF100790B16 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCB4B71CCF7EF100790B16 /* Common.m */; };
 		E2FCB4BC1CCF82F600790B16 /* CacheUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCB4BB1CCF82F600790B16 /* CacheUser.m */; };
@@ -81,6 +84,12 @@
 		CDF95AFC1CC4E3A900E6416B /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		E22FD6461CCE36AE0060480A /* HttpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpController.h; sourceTree = "<group>"; };
 		E22FD6471CCE36AE0060480A /* HttpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpController.m; sourceTree = "<group>"; };
+		E287AD7D1CD272D5003C4E20 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		E287AD7E1CD272D5003C4E20 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		E287AD841CD287EF003C4E20 /* RegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterService.h; sourceTree = "<group>"; };
+		E287AD851CD287EF003C4E20 /* RegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterService.m; sourceTree = "<group>"; };
+		E287AD871CD28830003C4E20 /* DetectMobileNoResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectMobileNoResp.h; sourceTree = "<group>"; };
+		E287AD881CD28830003C4E20 /* DetectMobileNoResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectMobileNoResp.m; sourceTree = "<group>"; };
 		E2FCB4B01CCF7DAB00790B16 /* HttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
 		E2FCB4B11CCF7DAB00790B16 /* HttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
 		E2FCB4B61CCF7EF100790B16 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -326,11 +335,11 @@
 		CD5427901CAC0324003543AE /* wyxc */ = {
 			isa = PBXGroup;
 			children = (
+				E22FD6421CCE36540060480A /* test */,
 				E2FCB4C31CCFD2DB00790B16 /* Login */,
 				E2FCB4BD1CCF834200790B16 /* Data */,
 				E2FCB4B91CCF82F600790B16 /* Cache */,
 				E2FCB4A51CCF7D6B00790B16 /* Base */,
-				E22FD6421CCE36540060480A /* test */,
 				CD110FCE1CBF444A00FCA6DC /* TestCoredata */,
 				CD125C2D1CAF4F3400388AE8 /* Storyboards */,
 				CD125C361CAF501500388AE8 /* Main */,
@@ -394,6 +403,10 @@
 		CDF95AFA1CC4E34000E6416B /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				E287AD831CD287DE003C4E20 /* Service */,
+				E287AD801CD28716003C4E20 /* Controller */,
+				E287AD811CD28716003C4E20 /* Model */,
+				E287AD821CD28716003C4E20 /* View */,
 				CDF95AFB1CC4E3A900E6416B /* RegisterController.h */,
 				CDF95AFC1CC4E3A900E6416B /* RegisterController.m */,
 			);
@@ -407,6 +420,42 @@
 				E22FD6471CCE36AE0060480A /* HttpController.m */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		E287AD801CD28716003C4E20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = Register/Controller;
+			sourceTree = "<group>";
+		};
+		E287AD811CD28716003C4E20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E287AD871CD28830003C4E20 /* DetectMobileNoResp.h */,
+				E287AD881CD28830003C4E20 /* DetectMobileNoResp.m */,
+			);
+			name = Model;
+			path = Register/Model;
+			sourceTree = "<group>";
+		};
+		E287AD821CD28716003C4E20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = Register/View;
+			sourceTree = "<group>";
+		};
+		E287AD831CD287DE003C4E20 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E287AD841CD287EF003C4E20 /* RegisterService.h */,
+				E287AD851CD287EF003C4E20 /* RegisterService.m */,
+			);
+			name = Service;
+			path = Register/Service;
 			sourceTree = "<group>";
 		};
 		E2FCB4A51CCF7D6B00790B16 /* Base */ = {
@@ -468,6 +517,8 @@
 		E2FCB4AB1CCF7D6B00790B16 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E287AD7D1CD272D5003C4E20 /* Utils.h */,
+				E287AD7E1CD272D5003C4E20 /* Utils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -693,6 +744,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD125C521CAF5A7A00388AE8 /* HomeController.m in Sources */,
+				E287AD891CD28830003C4E20 /* DetectMobileNoResp.m in Sources */,
 				E2FCB4B81CCF7EF100790B16 /* Common.m in Sources */,
 				E2FCB4C01CCF834200790B16 /* GlobalData.m in Sources */,
 				CD125C3A1CAF508800388AE8 /* MainController.m in Sources */,
@@ -710,9 +762,11 @@
 				E2FCB4C91CCFD30300790B16 /* LoginController.m in Sources */,
 				E22FD6481CCE36AE0060480A /* HttpController.m in Sources */,
 				CD110FD71CBF495F00FCA6DC /* RegisterEntity.m in Sources */,
+				E287AD861CD287EF003C4E20 /* RegisterService.m in Sources */,
 				CD5427931CAC0324003543AE /* main.m in Sources */,
 				CD125C5B1CAF5ACC00388AE8 /* DiscoveryController.m in Sources */,
 				CD125C5E1CAF5ADE00388AE8 /* MeController.m in Sources */,
+				E287AD7F1CD272D5003C4E20 /* Utils.m in Sources */,
 				E2FCB4D31CCFE51C00790B16 /* LoginResp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

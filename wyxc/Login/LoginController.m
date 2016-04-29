@@ -9,6 +9,7 @@
 #import "LoginController.h"
 #import "AppDelegate.h"
 #import "LoginService.h"
+#import "Utils.h"
 
 
 @interface LoginController ()
@@ -81,10 +82,11 @@
     [LoginService login:userName
                password:password
                 success:^(id data) {
-                    NSLog(@"chengogn");
+                    //NSLog(@"%@",data);
+                    [Utils showMessage:self.view message:data];
                 }
                 failure:^(id data) {
-                    NSLog(@"shibai");
+                    NSLog(@"%@",data);
                 }];
 }
 

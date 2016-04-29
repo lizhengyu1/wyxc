@@ -101,7 +101,7 @@
 //#define BASE_URL @"http://www.supcar.me:18080"
 #pragma mark Product Base URL
 //#define BASE_URL @"http://www.supcar.me:19080"
-#define BASE_URL @"http://www.supcar.me/api/v1"
+#define BASE_URL @"http://localhost:63342/WYXC_SERVER/API/"
 
 //第一次运行
 //教练
@@ -295,7 +295,7 @@ alpha:1.0]
 //获取短信验证码
 #define URL_GET_VERIFY_CODE @"verify"
 //用户注册
-#define URL_REGISTER @"signUp"
+#define URL_REGISTER @"register/register.php"
 //用户忘记密码
 #define URL_FORGOT_PASSWORD @"reset"
 
@@ -696,6 +696,11 @@ arc4random_uniform(256) / 255.0)
 #define STATUS_CODE_FAILURE 2
 // API请求状态-超时
 #define STATUS_CODE_TIMEOUT 3
+
+//手机号未注册
+#define ALREADY_ZHUCE 0
+//手机号已经注册
+#define WEI_ZHUCE 1
 
 #pragma mark 业务类型字典
 #define BIZ_TYPE_MESSAGE 1//消息

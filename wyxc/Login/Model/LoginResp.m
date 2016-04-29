@@ -15,15 +15,15 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
   return @{
-    @"userId" : @"userInfo.id",
-    @"userType" : @"userInfo.userType",
-    @"avatarKey" : @"userInfo.avatar.key",
-    @"avatarBucket" : @"userInfo.avatar.bucket",
-    @"loginId" : @"userInfo.loginId",
-    @"name" : @"userInfo.name",
-    @"nickName" : @"userInfo.nickname",
-    @"sex" : @"userInfo.sex",
-    @"accessToken" : @"userInfo.token"
+    @"userId" : @"item.userInfo.id",
+    @"userType" : @"item.userInfo.userType",
+    @"avatarKey" : @"item.userInfo.avatar.key",
+    @"avatarBucket" : @"item.userInfo.avatar.bucket",
+    @"loginId" : @"item.userInfo.loginId",
+    @"name" : @"item.userInfo.name",
+    @"nickName" : @"item.userInfo.nickname",
+    @"sex" : @"item.userInfo.sex",
+    @"accessToken" : @"item.accessToken"
   };
 }
 //{

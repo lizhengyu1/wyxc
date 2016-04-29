@@ -106,7 +106,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTe-Xg-gLC">
                                 <rect key="frame" x="238" y="69" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -415,9 +415,12 @@
                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U70-9X-qRh">
                                     <rect key="frame" x="30" y="8" width="540" height="29"/>
                                     <segments>
-                                        <segment title="学员注册"/>
                                         <segment title="教练注册"/>
+                                        <segment title="学员注册"/>
                                     </segments>
+                                    <connections>
+                                        <action selector="userTypeSegmented:" destination="LsE-fg-yBg" eventType="valueChanged" id="XVI-er-A64"/>
+                                    </connections>
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -445,8 +448,11 @@
                                     <state key="normal" title="注册">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="registerAction:" destination="LsE-fg-yBg" eventType="touchUpInside" id="Or1-ge-oZA"/>
+                                    </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaw-fu-5lq">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaw-fu-5lq">
                                     <rect key="frame" x="14" y="71" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -518,7 +524,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1Q-lR-jmN" customClass="RegisterField">
                                                     <rect key="frame" x="53" y="5" width="547" height="38"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -594,9 +600,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gki-l9-olO" customClass="RegisterField">
-                                                    <rect key="frame" x="53" y="5" width="547" height="39"/>
+                                                    <rect key="frame" x="53" y="4" width="547" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -632,7 +638,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请再一次输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4A-HZ-vfT" customClass="RegisterField">
                                                     <rect key="frame" x="53" y="5" width="547" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -658,10 +664,56 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NAu-9F-bg1" userLabel="womanClickView">
+                                                    <rect key="frame" x="300" y="8" width="300" height="28"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-3l-sqg">
+                                                            <rect key="frame" x="143" y="4" width="14" height="22"/>
+                                                            <state key="normal" image="reg_unselect"/>
+                                                            <state key="selected" image="reg_select"/>
+                                                            <connections>
+                                                                <action selector="sexBtn:" destination="LsE-fg-yBg" eventType="touchUpInside" id="cCl-ZT-NVA"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7V-a9-L3V">
+                                                            <rect key="frame" x="160" y="6" width="14" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="reg_icon_nv" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-5B-hwb">
+                                                            <rect key="frame" x="177" y="7" width="14" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="0t2-M1-a5h"/>
+                                                                <constraint firstAttribute="width" constant="14" id="JRv-Xx-W1p"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="OOp-5B-hwb" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="29w-Kg-Pbb"/>
+                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="DMA-VR-21a"/>
+                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="N5p-rD-nM8"/>
+                                                        <constraint firstItem="a1g-3l-sqg" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="Qws-mg-AME"/>
+                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="leading" secondItem="a1g-3l-sqg" secondAttribute="trailing" constant="3" id="SXk-ft-OaD"/>
+                                                        <constraint firstItem="OOp-5B-hwb" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="WJA-CU-IuM"/>
+                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="centerX" secondItem="NAu-9F-bg1" secondAttribute="centerX" id="XsV-UR-kTw"/>
+                                                        <constraint firstItem="a1g-3l-sqg" firstAttribute="centerX" secondItem="NAu-9F-bg1" secondAttribute="centerX" id="dml-Ld-eIo"/>
+                                                        <constraint firstItem="a1g-3l-sqg" firstAttribute="centerX" secondItem="NAu-9F-bg1" secondAttribute="centerX" id="p5v-J7-aDX"/>
+                                                        <constraint firstItem="OOp-5B-hwb" firstAttribute="leading" secondItem="a7V-a9-L3V" secondAttribute="trailing" constant="3" id="tGm-8W-Lo6"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="dml-Ld-eIo"/>
+                                                            <exclude reference="p5v-J7-aDX"/>
+                                                            <exclude reference="DMA-VR-21a"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-EK-jor" userLabel="manClickView">
                                                     <rect key="frame" x="0.0" y="8" width="300" height="28"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLM-aA-0yT">
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLM-aA-0yT">
                                                             <rect key="frame" x="143" y="3" width="14" height="22"/>
                                                             <state key="normal" image="reg_unselect"/>
                                                             <state key="selected" image="reg_select"/>
@@ -669,13 +721,13 @@
                                                                 <action selector="sexBtn:" destination="LsE-fg-yBg" eventType="touchUpInside" id="Dgn-3S-Qzc"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-0l-lX9">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-0l-lX9">
                                                             <rect key="frame" x="160" y="6" width="14" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reg_icon_man" translatesAutoresizingMaskIntoConstraints="NO" id="g33-Jb-pL8">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="reg_icon_man" translatesAutoresizingMaskIntoConstraints="NO" id="g33-Jb-pL8">
                                                             <rect key="frame" x="177" y="7" width="14" height="15"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="A1W-yV-iGh"/>
@@ -690,43 +742,14 @@
                                                         <constraint firstItem="g33-Jb-pL8" firstAttribute="leading" secondItem="0oC-0l-lX9" secondAttribute="trailing" constant="3" id="FwH-io-eC5"/>
                                                         <constraint firstItem="OLM-aA-0yT" firstAttribute="centerX" secondItem="LGh-EK-jor" secondAttribute="centerX" id="KYV-zO-R6f"/>
                                                         <constraint firstItem="OLM-aA-0yT" firstAttribute="centerY" secondItem="LGh-EK-jor" secondAttribute="centerY" id="f8o-py-Yst"/>
+                                                        <constraint firstItem="0oC-0l-lX9" firstAttribute="centerX" secondItem="LGh-EK-jor" secondAttribute="centerX" id="kE4-rF-yDZ"/>
                                                         <constraint firstItem="g33-Jb-pL8" firstAttribute="centerY" secondItem="LGh-EK-jor" secondAttribute="centerY" id="uTp-er-KUy"/>
                                                     </constraints>
-                                                </view>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NAu-9F-bg1" userLabel="womanClickView">
-                                                    <rect key="frame" x="300" y="8" width="300" height="28"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-3l-sqg">
-                                                            <rect key="frame" x="143" y="4" width="14" height="22"/>
-                                                            <state key="normal" image="reg_unselect"/>
-                                                            <state key="selected" image="reg_select"/>
-                                                            <connections>
-                                                                <action selector="sexBtn:" destination="LsE-fg-yBg" eventType="touchUpInside" id="cCl-ZT-NVA"/>
-                                                            </connections>
-                                                        </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7V-a9-L3V">
-                                                            <rect key="frame" x="160" y="6" width="14" height="17"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reg_icon_nv" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-5B-hwb">
-                                                            <rect key="frame" x="177" y="7" width="14" height="15"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="15" id="0t2-M1-a5h"/>
-                                                                <constraint firstAttribute="width" constant="14" id="JRv-Xx-W1p"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="N5p-rD-nM8"/>
-                                                        <constraint firstItem="a1g-3l-sqg" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="Qws-mg-AME"/>
-                                                        <constraint firstItem="a7V-a9-L3V" firstAttribute="leading" secondItem="a1g-3l-sqg" secondAttribute="trailing" constant="3" id="SXk-ft-OaD"/>
-                                                        <constraint firstItem="OOp-5B-hwb" firstAttribute="centerY" secondItem="NAu-9F-bg1" secondAttribute="centerY" id="WJA-CU-IuM"/>
-                                                        <constraint firstItem="a1g-3l-sqg" firstAttribute="centerX" secondItem="NAu-9F-bg1" secondAttribute="centerX" id="p5v-J7-aDX"/>
-                                                        <constraint firstItem="OOp-5B-hwb" firstAttribute="leading" secondItem="a7V-a9-L3V" secondAttribute="trailing" constant="3" id="tGm-8W-Lo6"/>
-                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="KYV-zO-R6f"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -765,7 +788,9 @@
                         <outlet property="passwordAgainField" destination="g4A-HZ-vfT" id="ZsX-JU-KzR"/>
                         <outlet property="passwordField" destination="gki-l9-olO" id="P4G-2V-iZw"/>
                         <outlet property="registerBtn" destination="etf-BK-Sdt" id="Td4-VX-HZQ"/>
+                        <outlet property="registerProtocolLabel" destination="gaw-fu-5lq" id="54m-bh-imo"/>
                         <outlet property="smsField" destination="K1Q-lR-jmN" id="gPI-VB-GRj"/>
+                        <outlet property="userTypeSegment" destination="U70-9X-qRh" id="nmv-Bh-t7S"/>
                         <outlet property="verifyCodeBtn" destination="rBI-8Z-FW6" id="WII-N7-5Ra"/>
                         <outlet property="womanBtn" destination="a1g-3l-sqg" id="7Jq-X9-BgE"/>
                         <outlet property="womanClickView" destination="NAu-9F-bg1" id="Tky-W2-7UM"/>
